@@ -14,10 +14,4 @@ Tato složka obsahuje základní dokumentaci k projektu **Village Marketplace** 
 - logický model: [`../class logicky.drawio`](../class%20logicky.drawio),
 - ERD: [`../ERD.drawio`](../ERD.drawio).
 
-## Účel dokumentace
 
-Dokumentace slouží jako výchozí základ pro:
-
-- školní odevzdání,
-- další rozpracování analýzy a návrhu systému,
-- sdílení kontextu nad doménovým modelem a požadavky projektu.

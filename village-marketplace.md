@@ -201,8 +201,9 @@ Hlavní scénář:
 
 ## Vazba na diagramy
 
-- [`class-diagram-konceptualni.drawio.png`](./class-diagram-konceptualni.drawio.png) zachycuje konceptuální pohled na entity, jejich atributy, základní operace a vztahy.
+- [`class-diagram-konceptualni.drawio`](./class-diagram-konceptualni.drawio) zachycuje konceptuální pohled na entity, jejich atributy, základní operace a vztahy.
 - [`class logicky.drawio`](./class%20logicky.drawio) zachycuje logický datový model včetně primárních a cizích klíčů a základních datových typů.
+- [`ERD.drawio`](./ERD.drawio) zachycuje databázový pohled na relační strukturu systému.
 
 - Tento dokument je s oběma diagramy sladěn zejména v oblasti inzerátů, reakcí, objednávek, faktur, notifikací a komunikace mezi uživateli.
 

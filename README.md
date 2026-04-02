@@ -44,16 +44,13 @@ Základní rozcestník dokumentace je v souboru [`docs/index.md`](./docs/index.m
 
 ## Práce s diagramy
 
-Diagramy jsou uložené ve formátu Draw.io:
+Diagramy jsou uložené ve formátu Draw.io a lze je přímo otevřít z repozitáře:
 
-- `class-diagram-konceptualni.drawio` - konceptuální pohled na hlavní entity a vztahy,
-- `class logicky.drawio` - logický model dat a vazeb,
-- `ERD.drawio` - entitně relační diagram databáze.
+- [`class-diagram-konceptualni.drawio`](./class-diagram-konceptualni.drawio) - konceptuální pohled na hlavní entity a vztahy,
+- [`class logicky.drawio`](./class%20logicky.drawio) - logický model dat a vazeb,
+- [`ERD.drawio`](./ERD.drawio) - entitně relační diagram databáze.
 
 Pro úpravy lze soubory otevřít v [draw.io / diagrams.net](https://app.diagrams.net/).
 
 ## Další doporučené kroky
 
-1. doplnit finální technologický stack a implementační rozhodnutí,
-2. sjednotit názvy diagramů a případně přidat exporty do PNG nebo PDF,
-3. navázat tuto dokumentaci na backlog, use cases a implementaci.
