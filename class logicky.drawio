@@ -1,0 +1,412 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Stránka-1" id="Tth1WZZyJzi3d_ABV11R">
+    <mxGraphModel dx="1810" dy="1872" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t_user" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="uzivatel" vertex="1">
+          <mxGeometry height="220" width="270" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_user_1" parent="t_user" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_uzivatel : INT" vertex="1">
+          <mxGeometry height="24" width="270" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_user_2" parent="t_user" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_role : INT" vertex="1">
+          <mxGeometry height="24" width="270" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_user_3" parent="t_user" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="email : VARCHAR(255)" vertex="1">
+          <mxGeometry height="24" width="270" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_user_4" parent="t_user" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="telefon : VARCHAR(20)" vertex="1">
+          <mxGeometry height="24" width="270" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_user_5" parent="t_user" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="heslo_hash : VARCHAR(255)" vertex="1">
+          <mxGeometry height="24" width="270" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="t_user_6" parent="t_user" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_registrace : DATETIME" vertex="1">
+          <mxGeometry height="24" width="270" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="t_user_7" parent="t_user" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="posledni_prihlaseni : DATETIME" vertex="1">
+          <mxGeometry height="24" width="270" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="t_role" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="role" vertex="1">
+          <mxGeometry height="124" width="240" x="55" y="-170" as="geometry" />
+        </mxCell>
+        <mxCell id="t_role_1" parent="t_role" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_role : INT" vertex="1">
+          <mxGeometry height="24" width="240" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_role_2" parent="t_role" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="nazev_role : VARCHAR(100)" vertex="1">
+          <mxGeometry height="24" width="240" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_role_3" parent="t_role" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="opravneni : TEXT" vertex="1">
+          <mxGeometry height="24" width="240" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sms" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="sms_overeni" vertex="1">
+          <mxGeometry height="148" width="270" x="-215" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sms_1" parent="t_sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_overeni : INT" vertex="1">
+          <mxGeometry height="24" width="270" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sms_2" parent="t_sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_uzivatel : INT" vertex="1">
+          <mxGeometry height="24" width="270" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sms_3" parent="t_sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="kod : VARCHAR(20)" vertex="1">
+          <mxGeometry height="24" width="270" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sms_4" parent="t_sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="platnost_do : DATETIME" vertex="1">
+          <mxGeometry height="24" width="270" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_sms_5" parent="t_sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="stav : VARCHAR(30)" vertex="1">
+          <mxGeometry height="24" width="270" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inz" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="inzerat" vertex="1">
+          <mxGeometry height="292" width="300" x="710" y="16" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inz_1" parent="t_inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_inzerat : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inz_2" parent="t_inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_autor_uzivatel : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inz_3" parent="t_inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK nazev_kategorie : VARCHAR(100)" vertex="1">
+          <mxGeometry height="24" width="300" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inz_4" parent="t_inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="typ_inzeratu : VARCHAR(50) -- nabidka/poptavka" vertex="1">
+          <mxGeometry height="24" width="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inz_5" parent="t_inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="popis : TEXT" vertex="1">
+          <mxGeometry height="24" width="300" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inz_6" parent="t_inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="mnozstvi : DECIMAL(10,2)&amp;nbsp; NULL" vertex="1">
+          <mxGeometry height="24" width="300" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="ofTDFKeHCdhAHThvCXaC-3" parent="t_inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="jednotka : VARCHAR(20) NULL" vertex="1">
+          <mxGeometry height="24" width="300" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inz_7" parent="t_inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="cena : DECIMAL(10,2)" vertex="1">
+          <mxGeometry height="24" width="300" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inz_8" parent="t_inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="platnost_od : DATETIME" vertex="1">
+          <mxGeometry height="24" width="300" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="t_inz_9" parent="t_inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="platnost_do : DATETIME" vertex="1">
+          <mxGeometry height="24" width="300" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="t_google" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="google_ucet" vertex="1">
+          <mxGeometry height="148" width="300" x="-550" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="t_google_4" parent="t_google" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK email_google : VARCHAR(255)" vertex="1">
+          <mxGeometry height="24" width="300" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_google_2" parent="t_google" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_uzivatel : INT UNIQUE" vertex="1">
+          <mxGeometry height="24" width="300" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_google_5" parent="t_google" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_propojeni : DATETIME" vertex="1">
+          <mxGeometry height="24" width="300" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_kat" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="kategorie" vertex="1">
+          <mxGeometry height="124" width="250" x="1270" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_kat_2" parent="t_kat" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK nazev_kategorie : VARCHAR(100)" vertex="1">
+          <mxGeometry height="24" width="250" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_kat_3" parent="t_kat" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="popis : TEXT" vertex="1">
+          <mxGeometry height="24" width="250" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_foto" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="foto" vertex="1">
+          <mxGeometry height="124" width="250" x="735" y="-260" as="geometry" />
+        </mxCell>
+        <mxCell id="t_foto_1" parent="t_foto" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_foto : INT" vertex="1">
+          <mxGeometry height="24" width="250" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_foto_2" parent="t_foto" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_inzerat : INT" vertex="1">
+          <mxGeometry height="24" width="250" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_foto_3" parent="t_foto" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="url : VARCHAR(500)" vertex="1">
+          <mxGeometry height="24" width="250" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_foto_4" parent="t_foto" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_nahrani : DATETIME" vertex="1">
+          <mxGeometry height="24" width="250" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reak" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="reakce" vertex="1">
+          <mxGeometry height="196" width="300" x="710" y="638" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reak_1" parent="t_reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_reakce : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reak_2" parent="t_reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_inzerat : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reak_3" parent="t_reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_autor_uzivatel : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reak_4" parent="t_reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="typ_reakce : VARCHAR(50)" vertex="1">
+          <mxGeometry height="24" width="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reak_5" parent="t_reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="nabizene_mnozstvi : DECIMAL(10,2)" vertex="1">
+          <mxGeometry height="24" width="300" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reak_6" parent="t_reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="cena : DECIMAL(10,2)" vertex="1">
+          <mxGeometry height="24" width="300" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reak_7" parent="t_reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="poznamka : TEXT" vertex="1">
+          <mxGeometry height="24" width="300" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="t_obj" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="objednavka" vertex="1">
+          <mxGeometry height="148" width="290" x="30" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="t_obj_1" parent="t_obj" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_objednavka : INT" vertex="1">
+          <mxGeometry height="24" width="290" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_obj_2" parent="t_obj" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_reakce : INT UNIQUE" vertex="1">
+          <mxGeometry height="24" width="290" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_obj_3" parent="t_obj" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_objednani : DATETIME" vertex="1">
+          <mxGeometry height="24" width="290" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_obj_5" parent="t_obj" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="stav : VARCHAR(30)" vertex="1">
+          <mxGeometry height="24" width="290" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_fak" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="faktura" vertex="1">
+          <mxGeometry height="220" width="300" x="-410" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="t_fak_1" parent="t_fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK cislo_faktury : VARCHAR(50)" vertex="1">
+          <mxGeometry height="24" width="300" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_fak_2" parent="t_fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_objednavka : INT UNIQUE" vertex="1">
+          <mxGeometry height="24" width="300" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_fak_3" parent="t_fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_vystaveni : DATETIME" vertex="1">
+          <mxGeometry height="24" width="300" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_fak_4" parent="t_fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_splatnosti : DATETIME" vertex="1">
+          <mxGeometry height="24" width="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_fak_5" parent="t_fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="stav : VARCHAR(30)" vertex="1">
+          <mxGeometry height="24" width="300" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="t_fak_6" parent="t_fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="pdf_url : VARCHAR(500)" vertex="1">
+          <mxGeometry height="24" width="300" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="t_fak_7" parent="t_fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_odeslani : DATETIME NULL" vertex="1">
+          <mxGeometry height="24" width="300" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="t_fak_8" parent="t_fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="stav_odeslani : VARCHAR(30)" vertex="1">
+          <mxGeometry height="24" width="300" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="t_konv" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="konverzace" vertex="1">
+          <mxGeometry height="124" width="300" x="1110" y="662" as="geometry" />
+        </mxCell>
+        <mxCell id="t_konv_1" parent="t_konv" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_konverzace : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_konv_2" parent="t_konv" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_reakce : INT UNIQUE" vertex="1">
+          <mxGeometry height="24" width="300" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_konv_3" parent="t_konv" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_vytvoreni : DATETIME" vertex="1">
+          <mxGeometry height="24" width="300" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_konv_4" parent="t_konv" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_posledni_zpravy : DATETIME" vertex="1">
+          <mxGeometry height="24" width="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_zpr" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="zprava" vertex="1">
+          <mxGeometry height="148" width="300" x="1110" y="446" as="geometry" />
+        </mxCell>
+        <mxCell id="t_zpr_1" parent="t_zpr" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_zprava : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_zpr_2" parent="t_zpr" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_konverzace : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_zpr_3" parent="t_zpr" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_odesilatel_uzivatel : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_zpr_4" parent="t_zpr" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="text : TEXT" vertex="1">
+          <mxGeometry height="24" width="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_zpr_5" parent="t_zpr" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_odeslani : DATETIME" vertex="1">
+          <mxGeometry height="24" width="300" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="t_not" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="notifikace" vertex="1">
+          <mxGeometry height="148" width="300" x="360" y="-170" as="geometry" />
+        </mxCell>
+        <mxCell id="t_not_1" parent="t_not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_notifikace : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_not_2" parent="t_not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_prijemce_uzivatel : INT" vertex="1">
+          <mxGeometry height="24" width="300" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_not_3" parent="t_not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="typ : VARCHAR(50)" vertex="1">
+          <mxGeometry height="24" width="300" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_not_4" parent="t_not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="text : TEXT" vertex="1">
+          <mxGeometry height="24" width="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_not_5" parent="t_not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_vytvoreni : DATETIME" vertex="1">
+          <mxGeometry height="24" width="300" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="t_aud" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="audit_log" vertex="1">
+          <mxGeometry height="196" width="330" x="-560" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_aud_1" parent="t_aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_audit_log : INT" vertex="1">
+          <mxGeometry height="24" width="330" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="t_aud_2" parent="t_aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="FK id_uzivatel_akce : INT" vertex="1">
+          <mxGeometry height="24" width="330" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="t_aud_3" parent="t_aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="typ_akce : VARCHAR(50)" vertex="1">
+          <mxGeometry height="24" width="330" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="t_aud_4" parent="t_aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="cas_udalosti : DATETIME" vertex="1">
+          <mxGeometry height="24" width="330" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="t_aud_5" parent="t_aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="vysledek : VARCHAR(30)" vertex="1">
+          <mxGeometry height="24" width="330" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="t_aud_6" parent="t_aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="detail : TEXT" vertex="1">
+          <mxGeometry height="24" width="330" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="t_user" style="endArrow=none;html=1;rounded=0;" target="t_role" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="t_sms" style="endArrow=none;html=1;rounded=0;" target="t_user" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="t_inz" style="endArrow=none;html=1;rounded=0;" target="t_user" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4" edge="1" parent="1" source="t_inz" style="endArrow=none;html=1;rounded=0;" target="t_kat" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5" edge="1" parent="1" source="t_foto" style="endArrow=none;html=1;rounded=0;" target="t_inz" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel6" edge="1" parent="1" source="t_reak" style="endArrow=none;html=1;rounded=0;" target="t_inz" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel7" edge="1" parent="1" source="t_reak" style="endArrow=none;html=1;rounded=0;" target="t_user" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel8" edge="1" parent="1" source="t_obj" style="endArrow=none;html=1;rounded=0;" target="t_reak" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel10" edge="1" parent="1" source="t_fak" style="endArrow=none;html=1;rounded=0;" target="t_obj" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel11" edge="1" parent="1" source="t_konv" style="endArrow=none;html=1;rounded=0;" target="t_reak" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel12" edge="1" parent="1" source="t_zpr" style="endArrow=none;html=1;rounded=0;" target="t_konv" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel13" edge="1" parent="1" source="t_zpr" style="endArrow=none;html=1;rounded=0;" target="t_user" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel14" edge="1" parent="1" source="t_not" style="endArrow=none;html=1;rounded=0;" target="t_user" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel15" edge="1" parent="1" source="t_aud" style="endArrow=none;html=1;rounded=0;" target="t_user" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel16" edge="1" parent="1" source="t_google" style="endArrow=none;html=1;rounded=0;" target="t_user" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..n" vertex="1">
+          <mxGeometry height="20" width="70" x="170" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="180" y="-46" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1..n" vertex="1">
+          <mxGeometry height="20" width="70" x="-90" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="30" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..n" vertex="1">
+          <mxGeometry height="20" width="70" x="1030" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="25" width="50" x="310" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..1" vertex="1">
+          <mxGeometry height="20" width="70" x="860" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="880" y="-16" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..n" vertex="1">
+          <mxGeometry height="20" width="70" x="750" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="1010" y="705" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..1" vertex="1">
+          <mxGeometry height="20" width="70" x="320" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="660" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..1" vertex="1">
+          <mxGeometry height="20" width="70" x="-115" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="-20" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..1" vertex="1">
+          <mxGeometry height="20" width="70" x="1040" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="310" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1..n" vertex="1">
+          <mxGeometry height="20" width="70" x="1250" y="594" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="1090" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="1260" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..n" vertex="1">
+          <mxGeometry height="32" width="70" x="400" y="-22" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="310" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="50" x="710" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ofTDFKeHCdhAHThvCXaC-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="-20" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ofTDFKeHCdhAHThvCXaC-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..N" vertex="1">
+          <mxGeometry height="30" width="60" x="-230" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ofTDFKeHCdhAHThvCXaC-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..n" vertex="1">
+          <mxGeometry height="30" width="60" x="1010" y="133" as="geometry" />
+        </mxCell>
+        <mxCell id="ofTDFKeHCdhAHThvCXaC-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="1200" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ofTDFKeHCdhAHThvCXaC-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..n" vertex="1">
+          <mxGeometry height="30" width="60" x="640" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ofTDFKeHCdhAHThvCXaC-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ofTDFKeHCdhAHThvCXaC-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="-20" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ofTDFKeHCdhAHThvCXaC-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..1" vertex="1">
+          <mxGeometry height="30" width="60" x="-320" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="3snbjPg0wk3DXSq9O2ij-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="860" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="3snbjPg0wk3DXSq9O2ij-3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..n" vertex="1">
+          <mxGeometry height="20" width="70" x="870" y="605" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

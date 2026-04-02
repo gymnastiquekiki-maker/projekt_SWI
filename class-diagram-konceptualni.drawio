@@ -1,0 +1,427 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram id="class-diagram-konceptualni" name="Page-1">
+    <mxGraphModel dx="2903" dy="1903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Uživatel" vertex="1">
+          <mxGeometry height="244" width="240" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-13" parent="u" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="ID_uzivatel" vertex="1">
+          <mxGeometry height="24" width="240" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="u3" parent="u" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="telefon" vertex="1">
+          <mxGeometry height="24" width="240" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" parent="u" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="email" vertex="1">
+          <mxGeometry height="24" width="240" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="u4" parent="u" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="heslo_hash" vertex="1">
+          <mxGeometry height="24" width="240" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="u5" parent="u" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_registrace" vertex="1">
+          <mxGeometry height="24" width="240" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="u6" parent="u" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="poslední_přihlášení" vertex="1">
+          <mxGeometry height="24" width="240" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="u7" parent="u" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ registrovatSe()" vertex="1">
+          <mxGeometry height="24" width="240" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="u8" parent="u" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ prihlasitSe()" vertex="1">
+          <mxGeometry height="24" width="240" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="r" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Role" vertex="1">
+          <mxGeometry height="148" width="220" x="50" y="-210" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" parent="r" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="nazev_role" vertex="1">
+          <mxGeometry height="24" width="220" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" parent="r" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="opravneni" vertex="1">
+          <mxGeometry height="24" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" parent="r" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ pridelitOpravneni()" vertex="1">
+          <mxGeometry height="24" width="220" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="sms" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="SMS_ověření" vertex="1">
+          <mxGeometry height="172" width="220" x="50" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="sms1" parent="sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="ID_ověření" vertex="1">
+          <mxGeometry height="24" width="220" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="sms2" parent="sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="kód" vertex="1">
+          <mxGeometry height="24" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="sms3" parent="sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="platnost_do" vertex="1">
+          <mxGeometry height="24" width="220" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="sms4" parent="sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="stav" vertex="1">
+          <mxGeometry height="24" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="sms5" parent="sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ vygenerovatKod()" vertex="1">
+          <mxGeometry height="24" width="220" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="sms6" parent="sms" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ overitKod()" vertex="1">
+          <mxGeometry height="24" width="220" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="inz" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Inzerát" vertex="1">
+          <mxGeometry height="340" width="260" x="690" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="inz1" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="ID_inzerát" vertex="1">
+          <mxGeometry height="24" width="260" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="inz2" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="typ_inzerátu" vertex="1">
+          <mxGeometry height="24" width="260" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="inz3" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="popis" vertex="1">
+          <mxGeometry height="24" width="260" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="inz4" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="množství" vertex="1">
+          <mxGeometry height="24" width="260" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="inz4b" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="jednotka" vertex="1">
+          <mxGeometry height="24" width="260" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="inz5" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="cena" vertex="1">
+          <mxGeometry height="24" width="260" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="inz6" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="platnost_od" vertex="1">
+          <mxGeometry height="24" width="260" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="inz7" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="platnost_do" vertex="1">
+          <mxGeometry height="24" width="260" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="inz9" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="stav" vertex="1">
+          <mxGeometry height="24" width="260" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="inz10" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ zverejnit()" vertex="1">
+          <mxGeometry height="24" width="260" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="inz11" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ upravit()" vertex="1">
+          <mxGeometry height="24" width="260" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="inz12" parent="inz" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ pridatFoto()" vertex="1">
+          <mxGeometry height="24" width="260" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="kat" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Kategorie" vertex="1">
+          <mxGeometry height="124" width="220" x="1060" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="kat1" parent="kat" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="název_kategorie" vertex="1">
+          <mxGeometry height="24" width="220" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="kat2" parent="kat" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="popis" vertex="1">
+          <mxGeometry height="24" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="kat3" parent="kat" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ priraditInzerat()" vertex="1">
+          <mxGeometry height="24" width="220" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="foto" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Foto" vertex="1">
+          <mxGeometry height="148" width="220" x="700" y="-270" as="geometry" />
+        </mxCell>
+        <mxCell id="foto1" parent="foto" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="ID_foto" vertex="1">
+          <mxGeometry height="24" width="220" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="foto2" parent="foto" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="url" vertex="1">
+          <mxGeometry height="24" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="foto3" parent="foto" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ nahrat()" vertex="1">
+          <mxGeometry height="24" width="220" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="foto4" parent="foto" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ smazat()" vertex="1">
+          <mxGeometry height="24" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="reak" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Reakce" vertex="1">
+          <mxGeometry height="196" width="260" x="680" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="reak1" parent="reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="ID_reakce" vertex="1">
+          <mxGeometry height="24" width="260" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="reak2" parent="reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="typ_reakce" vertex="1">
+          <mxGeometry height="24" width="260" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="reak3" parent="reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="nabízené_množství" vertex="1">
+          <mxGeometry height="24" width="260" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="reak4" parent="reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="cena" vertex="1">
+          <mxGeometry height="24" width="260" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="reak5" parent="reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="poznámka" vertex="1">
+          <mxGeometry height="24" width="260" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="reak6" parent="reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ vytvorit()" vertex="1">
+          <mxGeometry height="24" width="260" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="reak7" parent="reak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ zrusit()" vertex="1">
+          <mxGeometry height="24" width="260" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="obj" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Objednávka" vertex="1">
+          <mxGeometry height="196" width="240" x="40" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="obj1" parent="obj" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="ID_objednávka" vertex="1">
+          <mxGeometry height="24" width="240" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="obj2" parent="obj" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_objednání" vertex="1">
+          <mxGeometry height="24" width="240" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="obj4" parent="obj" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="stav" vertex="1">
+          <mxGeometry height="24" width="240" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="obj5" parent="obj" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ potvrdit()" vertex="1">
+          <mxGeometry height="24" width="240" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="obj6" parent="obj" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ stornovat()" vertex="1">
+          <mxGeometry height="24" width="240" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="fak" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Faktura" vertex="1">
+          <mxGeometry height="244" width="240" x="-400" y="486" as="geometry" />
+        </mxCell>
+        <mxCell id="fak1" parent="fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="číslo_faktury" vertex="1">
+          <mxGeometry height="24" width="240" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="fak2" parent="fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_vystavení" vertex="1">
+          <mxGeometry height="24" width="240" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="fak3" parent="fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_splatnosti" vertex="1">
+          <mxGeometry height="24" width="240" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="fak4" parent="fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="stav" vertex="1">
+          <mxGeometry height="24" width="240" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="fak5" parent="fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="pdf_url" vertex="1">
+          <mxGeometry height="24" width="240" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="fak6" parent="fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_odeslání" vertex="1">
+          <mxGeometry height="24" width="240" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="fak7" parent="fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="stav_odeslání" vertex="1">
+          <mxGeometry height="24" width="240" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="fak8" parent="fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ vystavit()" vertex="1">
+          <mxGeometry height="24" width="240" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="fak9" parent="fak" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ odeslat()" vertex="1">
+          <mxGeometry height="24" width="240" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="google" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Google_účet" vertex="1">
+          <mxGeometry height="172" width="240" x="-400" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="google3" parent="google" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="&lt;u&gt;email_google&lt;/u&gt;" vertex="1">
+          <mxGeometry height="24" width="240" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="google4" parent="google" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_propojení" vertex="1">
+          <mxGeometry height="24" width="240" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="google5" parent="google" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ propojit()" vertex="1">
+          <mxGeometry height="24" width="240" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="konv" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Konverzace" vertex="1">
+          <mxGeometry height="172" width="240" x="1090" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="konv1" parent="konv" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="ID_konverzace" vertex="1">
+          <mxGeometry height="24" width="240" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="konv2" parent="konv" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_vytvoření" vertex="1">
+          <mxGeometry height="24" width="240" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="konv3" parent="konv" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_poslední_zprávy" vertex="1">
+          <mxGeometry height="24" width="240" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="konv4" parent="konv" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ zalozit()" vertex="1">
+          <mxGeometry height="24" width="240" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="konv5" parent="konv" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ pridatZpravu()" vertex="1">
+          <mxGeometry height="24" width="240" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="zpr" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Zpráva" vertex="1">
+          <mxGeometry height="148" width="220" x="960" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="zpr1" parent="zpr" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="ID_zpráva" vertex="1">
+          <mxGeometry height="24" width="220" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="zpr2" parent="zpr" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="text" vertex="1">
+          <mxGeometry height="24" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="zpr3" parent="zpr" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ odeslat()" vertex="1">
+          <mxGeometry height="24" width="220" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="not" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Notifikace" vertex="1">
+          <mxGeometry height="172" width="220" x="-390" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="not1" parent="not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="ID_notifikace" vertex="1">
+          <mxGeometry height="24" width="220" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="not2" parent="not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="typ" vertex="1">
+          <mxGeometry height="24" width="220" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-5" parent="not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="text" vertex="1">
+          <mxGeometry height="24" width="220" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-7" parent="not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="datum_vytvoreni" vertex="1">
+          <mxGeometry height="24" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="not3" parent="not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ vytvorit()" vertex="1">
+          <mxGeometry height="24" width="220" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="not4" parent="not" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ odeslat()" vertex="1">
+          <mxGeometry height="24" width="220" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="aud" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="Audit_log" vertex="1">
+          <mxGeometry height="220" width="240" x="330" y="-210" as="geometry" />
+        </mxCell>
+        <mxCell id="aud1" parent="aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=4" value="ID_audit_log" vertex="1">
+          <mxGeometry height="24" width="240" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="aud2" parent="aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="typ_akce" vertex="1">
+          <mxGeometry height="24" width="240" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="aud3" parent="aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="čas_udalosti" vertex="1">
+          <mxGeometry height="24" width="240" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="aud4" parent="aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="výsledek" vertex="1">
+          <mxGeometry height="24" width="240" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aud5" parent="aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="detail" vertex="1">
+          <mxGeometry height="24" width="240" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="aud7" parent="aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ zaznamenatAkci()" vertex="1">
+          <mxGeometry height="24" width="240" y="148" as="geometry" />
+        </mxCell>
+        <mxCell id="aud8" parent="aud" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;fontStyle=2" value="+ filtrovat()" vertex="1">
+          <mxGeometry height="24" width="240" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_rel" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" value="Typy vztahů&lt;br&gt;&lt;br&gt;asociace: Uživatel-Role, Uživatel-Inzerát, Uživatel-Reakce, Uživatel-Zpráva, Uživatel-Google_účet, Inzerát-Kategorie, Reakce-Objednávka&lt;br&gt;&lt;br&gt;agregace: Uživatel-Notifikace, Uživatel-Audit_log, Inzerát-Reakce, Reakce-Konverzace&lt;br&gt;&lt;br&gt;kompozice: Uživatel-SMS_ověření, Inzerát-Foto, Objednávka-Položka_objednávky, Objednávka-Faktura, Konverzace-Zpráva" vertex="1">
+          <mxGeometry height="220" width="360" x="1460" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="legend_inheritance" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=8;" value="Možné dědičnosti&lt;br&gt;&lt;br&gt;Uživatel -&gt; Kupující / Prodávající / Administrátor&lt;br&gt;Notifikace -&gt; Email / SMS / Systémová&lt;br&gt;Reakce -&gt; Poptávka / Nabídka / Rezervace&lt;br&gt;&lt;br&gt;Na konceptuální úrovni jsou zatím ponechány jako poznámka." vertex="1">
+          <mxGeometry height="170" width="360" x="1460" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="u" style="endArrow=none;html=1;rounded=0;" target="r" value="má">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="u" style="endArrow=none;html=1;rounded=0;" target="sms" value="ověřuje přes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="u" style="endArrow=none;html=1;rounded=0;" target="inz" value="zveřejňuje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="u" style="endArrow=none;html=1;rounded=0;" target="reak" value="odesílá">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="u" style="endArrow=none;html=1;rounded=0;" target="zpr" value="odesílá">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="u" style="endArrow=none;html=1;rounded=0;" target="not" value="dostává">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="u" style="endArrow=none;html=1;rounded=0;" target="aud" value="provádí">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="inz" style="endArrow=none;html=1;rounded=0;" target="kat" value="má">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="inz" style="endArrow=none;html=1;rounded=0;" target="foto" value="má">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="inz" style="endArrow=none;html=1;rounded=0;" target="reak" value="má">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="reak" style="endArrow=none;html=1;rounded=0;" target="obj" value="vzniká_z">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="obj" style="endArrow=none;html=1;rounded=0;" target="fak" value="má">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="reak" style="endArrow=none;html=1;rounded=0;" target="konv" value="má">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="konv" style="endArrow=none;html=1;rounded=0;" target="zpr" value="obsahuje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="u" style="endArrow=none;html=1;rounded=0;" target="google" value="má propojený">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..n&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="160" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="65" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1 : 0..n" vertex="1">
+          <mxGeometry height="20" width="70" x="280" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..1" vertex="1">
+          <mxGeometry height="20" width="70" x="280" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..1" vertex="1">
+          <mxGeometry height="20" width="70" x="810" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="70" x="610" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="&amp;nbsp;0..n" vertex="1">
+          <mxGeometry height="20" width="70" x="820" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="280" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="830" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="70" x="160" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="-20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..n" vertex="1">
+          <mxGeometry height="30" width="60" x="-180" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1..n" vertex="1">
+          <mxGeometry height="30" width="60" x="50" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="-10" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..1" vertex="1">
+          <mxGeometry height="30" width="60" x="-180" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-14" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..n&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="320" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-15" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="20" width="70" x="270" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-16" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..n&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="610" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="0..n&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="940" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-18" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="1000" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-22" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="820" y="-70" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-25" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="&amp;nbsp;0..n" vertex="1">
+          <mxGeometry height="20" width="70" x="1020" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-26" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="940" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-28" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="1&amp;nbsp;" vertex="1">
+          <mxGeometry height="20" width="70" x="1230" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-29" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" value="&amp;nbsp;0..n" vertex="1">
+          <mxGeometry height="20" width="70" x="1175" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-33" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="0..1" vertex="1">
+          <mxGeometry height="30" width="60" x="-160" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="uEhJZS6l09dpbw2DwY55-34" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="-20" y="545" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
