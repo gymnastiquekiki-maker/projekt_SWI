@@ -204,6 +204,7 @@ Hlavní scénář:
 - [`class-diagram-konceptualni.drawio`](./class-diagram-konceptualni.drawio) zachycuje konceptuální pohled na entity, jejich atributy, základní operace a vztahy.
 - [`class logicky.drawio`](./class%20logicky.drawio) zachycuje logický datový model včetně primárních a cizích klíčů a základních datových typů.
 - [`ERD.drawio`](./ERD.drawio) zachycuje databázový pohled na relační strukturu systému.
+- [`dfd.drawio`](./dfd.drawio) zachycuje hlavní procesy a tok dat mezi aktéry a systémem.
 
 - Tento dokument je s oběma diagramy sladěn zejména v oblasti inzerátů, reakcí, objednávek, faktur, notifikací a komunikace mezi uživateli.
 

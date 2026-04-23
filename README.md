@@ -17,6 +17,7 @@ Repozitář pro projekt z předmětu Softwarové inženýrství. Projekt řeší
 |-- class logicky.drawio
 |-- class-diagram-konceptualni.drawio
 |-- ERD.drawio
+|-- dfd.drawio
 `-- docs/
     |-- index.md
     |-- requirements.md
@@ -48,9 +49,9 @@ Diagramy jsou uložené ve formátu Draw.io a lze je přímo otevřít z repozit
 
 - [`class-diagram-konceptualni.drawio`](./class-diagram-konceptualni.drawio) - konceptuální pohled na hlavní entity a vztahy,
 - [`class logicky.drawio`](./class%20logicky.drawio) - logický model dat a vazeb,
-- [`ERD.drawio`](./ERD.drawio) - entitně relační diagram databáze.
+- [`ERD.drawio`](./ERD.drawio) - entitně relační diagram databáze,
+- [`dfd.drawio`](./dfd.drawio) - diagram toku dat hlavních procesů systému.
 
 Pro úpravy lze soubory otevřít v [draw.io / diagrams.net](https://app.diagrams.net/).
 
 ## Další doporučené kroky
-

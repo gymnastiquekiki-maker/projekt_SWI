@@ -12,6 +12,5 @@ Tato složka obsahuje základní dokumentaci k projektu **Village Marketplace** 
 - hlavní textová specifikace: [`../village-marketplace.md`](../village-marketplace.md),
 - konceptuální diagram: [`../class-diagram-konceptualni.drawio`](../class-diagram-konceptualni.drawio),
 - logický model: [`../class logicky.drawio`](../class%20logicky.drawio),
-- ERD: [`../ERD.drawio`](../ERD.drawio).
-
-
+- ERD: [`../ERD.drawio`](../ERD.drawio),
+- DFD: [`../dfd.drawio`](../dfd.drawio).

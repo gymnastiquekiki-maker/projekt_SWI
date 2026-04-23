@@ -194,7 +194,7 @@
           <mxGeometry height="24" width="300" y="196" as="geometry" />
         </mxCell>
         <mxCell id="t_konv" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;html=1;whiteSpace=wrap;" value="konverzace" vertex="1">
-          <mxGeometry height="124" width="300" x="1110" y="662" as="geometry" />
+          <mxGeometry height="124" width="300" x="1110" y="674" as="geometry" />
         </mxCell>
         <mxCell id="t_konv_1" parent="t_konv" style="text;align=left;verticalAlign=top;spacingLeft=6;spacingTop=4;strokeColor=none;fillColor=none;html=1;" value="PK id_konverzace : INT" vertex="1">
           <mxGeometry height="24" width="300" y="28" as="geometry" />

@@ -1,0 +1,237 @@
+<mxfile host="Electron">
+  <diagram name="Stránka-1" id="gwhturlboxQE0nLjweFn">
+    <mxGraphModel dx="2516" dy="1216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Uživatel" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Admin" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="0&#xa;Village Marketplace IS" vertex="1">
+          <mxGeometry height="120" width="220" x="310" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="oauth" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Google OAuth" vertex="1">
+          <mxGeometry height="60" width="140" x="690" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="sms" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SMS Provider" vertex="1">
+          <mxGeometry height="60" width="140" x="690" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="user" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="system" value="Uživatelské údaje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="system" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="user" value="Informace o účtu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="admin" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.182;entryY=0.917;entryDx=0;entryDy=0;entryPerimeter=0;" target="system" value="Požadavky na správu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="system" style="endArrow=classic;html=1;rounded=0;" target="admin" value="Reporty a chybová hlášení">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="system" style="endArrow=classic;html=1;rounded=0;" target="oauth" value="Identifikační údaje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="oauth" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" target="system" value="Výsledek ověření identity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="system" style="endArrow=classic;html=1;rounded=0;" target="sms" value="Údaje pro SMS ověření">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="sms" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="system" value="Stav doručení SMS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx_notif" edge="1" parent="1" source="system" style="endArrow=classic;html=1;rounded=0;entryX=0.356;entryY=0.99;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.044;exitY=0.68;exitDx=0;exitDy=0;exitPerimeter=0;" target="user" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="280" />
+            </Array>
+            <mxPoint x="410" y="300" as="sourcePoint" />
+            <mxPoint x="460" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_notif_label" connectable="0" parent="ctx_notif" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Notifikace" vertex="1">
+          <mxGeometry relative="1" x="-0.0596" y="5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_req" edge="1" parent="1" source="user" style="endArrow=classic;html=1;rounded=0;exitX=0.622;exitY=1.015;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="system" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="260" />
+            </Array>
+            <mxPoint x="420" y="430" as="sourcePoint" />
+            <mxPoint x="470" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_req_label" connectable="0" parent="ctx_req" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Požadavky" vertex="1">
+          <mxGeometry relative="1" x="-0.3038" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_ads" edge="1" parent="1" source="system" style="endArrow=classic;html=1;rounded=0;exitX=0.276;exitY=0.047;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="user" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="90" />
+            </Array>
+            <mxPoint x="370" y="430" as="sourcePoint" />
+            <mxPoint x="420" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx_ads_label" connectable="0" parent="ctx_ads" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Informace o inzerátech" vertex="1">
+          <mxGeometry relative="1" x="-0.3302" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_user" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Uživatel" vertex="1">
+          <mxGeometry height="60" width="120" x="-140" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_admin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Admin" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_oauth" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Google OAuth" vertex="1">
+          <mxGeometry height="60" width="140" x="1020" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_sms" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SMS Provider" vertex="1">
+          <mxGeometry height="60" width="140" x="1020" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_p1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="1.0&#xa;Správa uživatelů" vertex="1">
+          <mxGeometry height="90" width="180" x="234" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_p20" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="2.0&#xa;Zpracování požadavků" vertex="1">
+          <mxGeometry height="80" width="140" x="60" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_p2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="3.0&#xa;Správa inzerátů" vertex="1">
+          <mxGeometry height="90" width="180" x="250" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_p3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="4.0&#xa;Ověření a notifikace" vertex="1">
+          <mxGeometry height="100" width="210" x="590" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_p4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="5.0&#xa;Administrace a reporting" vertex="1">
+          <mxGeometry height="90" width="220" x="414" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_d1" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;top=0;left=0;bottom=0;right=1;" value="D1&#xa;Uživatelé" vertex="1">
+          <mxGeometry height="70" width="130" x="640" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_d2" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;top=0;left=0;bottom=0;right=1;" value="D2&#xa;Inzeráty" vertex="1">
+          <mxGeometry height="70" width="130" x="-130" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_d3" parent="1" style="shape=partialRectangle;whiteSpace=wrap;html=1;top=0;left=0;bottom=0;right=1;" value="D3&#xa;Logy a reporty" vertex="1">
+          <mxGeometry height="70" width="150" x="720" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e1" edge="1" parent="1" source="l1_user" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" target="l1_p1" value="Uživatelské údaje">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_e2" edge="1" parent="1" source="l1_p1" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="l1_user" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="580" />
+            </Array>
+            <mxPoint x="370" y="680" as="sourcePoint" />
+            <mxPoint x="420" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_e2_label" connectable="0" parent="l1_e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Informace o účtu" vertex="1">
+          <mxGeometry relative="1" x="-0.0854" y="5" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_e20" edge="1" parent="1" source="l1_user" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="l1_p20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e20_label" connectable="0" parent="l1_e20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Požadavky" vertex="1">
+          <mxGeometry relative="1" x="-0.3658" y="6" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_e21" edge="1" parent="1" source="l1_p20" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.333;entryY=0.037;entryDx=0;entryDy=0;entryPerimeter=0;" target="l1_p2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e21_label" connectable="0" parent="l1_e21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Požadavky na inzeráty" vertex="1">
+          <mxGeometry relative="1" x="-0.1297" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_e22" edge="1" parent="1" source="l1_p20" style="endArrow=classic;html=1;rounded=0;" target="l1_p3" value="Požadavek na ověření / notifikaci">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e23" edge="1" parent="1" source="l1_p2" style="endArrow=classic;html=1;rounded=0;exitX=0.264;exitY=0.047;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.122;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;" target="l1_user" value="Informace o inzerátech">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_e3" edge="1" parent="1" source="l1_p3" style="endArrow=classic;html=1;rounded=0;" target="l1_user" value="Notifikace">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e4" edge="1" parent="1" source="l1_admin" style="endArrow=classic;html=1;rounded=0;" target="l1_p4" value="Požadavky na správu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e5" edge="1" parent="1" source="l1_p4" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0.036;exitY=0.756;exitDx=0;exitDy=0;exitPerimeter=0;" target="l1_admin" value="Reporty a chybová hlášení">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e6" edge="1" parent="1" source="l1_p3" style="endArrow=classic;html=1;rounded=0;" target="l1_oauth" value="Identifikační údaje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e7" edge="1" parent="1" source="l1_oauth" style="endArrow=classic;html=1;rounded=0;entryX=0.985;entryY=0.657;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" target="l1_p3" value="Výsledek ověření identity">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e8" edge="1" parent="1" source="l1_p3" style="endArrow=classic;html=1;rounded=0;" target="l1_sms" value="Požadavek na odeslání SMS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e9" edge="1" parent="1" source="l1_sms" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" target="l1_p3" value="Stav doručení SMS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e10" edge="1" parent="1" source="l1_p1" style="endArrow=classic;html=1;rounded=0;" target="l1_d1" value="Údaje uživatele">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_e11" edge="1" parent="1" source="l1_d1" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="l1_p1" value="Údaje uživatele">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_e12" edge="1" parent="1" source="l1_p2" style="endArrow=classic;html=1;rounded=0;" target="l1_d2" value="Údaje o inzerátech">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e13" edge="1" parent="1" source="l1_d2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" value="Údaje o inzerátech">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_e14" edge="1" parent="1" source="l1_p1" style="endArrow=classic;html=1;rounded=0;" target="l1_p2" value="Údaje uživatele">
+          <mxGeometry relative="1" x="0.5346" y="5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l1_e16" edge="1" parent="1" source="l1_p2" style="endArrow=classic;html=1;rounded=0;" target="l1_p3" value="Události o inzerátech">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e17" edge="1" parent="1" source="l1_p1" style="endArrow=classic;html=1;rounded=0;" target="l1_d3" value="Logy a statistická data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e18" edge="1" parent="1" source="l1_p2" style="endArrow=classic;html=1;rounded=0;" target="l1_d3" value="Logy a statistická data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e19" edge="1" parent="1" source="l1_p3" style="endArrow=classic;html=1;rounded=0;" target="l1_d3" value="Logy a statistická data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l1_e24" edge="1" parent="1" source="l1_d3" style="endArrow=classic;html=1;rounded=0;" target="l1_p4" value="Logy a reporty">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
