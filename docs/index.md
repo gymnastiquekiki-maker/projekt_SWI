@@ -1,16 +1,17 @@
 # Dokumentace projektu
 
-Tato složka obsahuje základní dokumentaci k projektu **Village Marketplace** v rámci repozitáře `projekt-SWI`.
+Tato slozka obsahuje zakladni dokumentaci k projektu **Village Marketplace** v ramci repozitare `projekt-SWI`.
 
 ## Obsah
 
-- [`requirements.md`](./requirements.md) - souhrn požadavků a hlavních aktérů systému,
-- [`architecture.md`](./architecture.md) - popis navržené architektury, datového modelu a souvisejících diagramů.
+- [`requirements.md`](./requirements.md) - souhrn pozadavku a hlavnich akteru systemu.
+- [`architecture.md`](./architecture.md) - popis navrzene architektury, datoveho modelu a souvisejicich diagramu.
+- [`dokumentace-implementace.md`](./dokumentace-implementace.md) - popis prubehu implementace a hlavnich zmen oproti puvodnimu konceptu.
 
-## Primární zdroje
+## Primarni zdroje
 
-- hlavní textová specifikace: [`../village-marketplace.md`](../village-marketplace.md),
-- konceptuální diagram: [`../class-diagram-konceptualni.drawio`](../class-diagram-konceptualni.drawio),
-- logický model: [`../class logicky.drawio`](../class%20logicky.drawio),
-- ERD: [`../ERD.drawio`](../ERD.drawio),
-- DFD: [`../dfd.drawio`](../dfd.drawio).
+- hlavni textova specifikace: [`../village-marketplace.md`](../village-marketplace.md)
+- konceptualni diagram: [`../class-diagram-konceptualni.drawio`](../class-diagram-konceptualni.drawio)
+- logicky model: [`../class logicky.drawio`](../class%20logicky.drawio)
+- ERD: [`../ERD.drawio`](../ERD.drawio)
+- DFD: [`../dfd.drawio`](../dfd.drawio)
